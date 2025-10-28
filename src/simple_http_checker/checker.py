@@ -4,51 +4,54 @@ from typing import Collection
 
 logger = logging.getLogger(__name__)
 
+
 def check_urls(
     urls: Collection[str], timeout: int = 5
-) -> dict[str, bool]:
+) -> dict[str, str]:
     """
-    Check the availability of a list of URLs.
+    Checks a list of URLs and returns their status.
 
     Args:
-        urls (list[str]): A list of URLs to check.
-        timeout (int): Timeout for each request in seconds.
+        urls: A list of URL strings to check.
+        timeout: Maximum time in seconds to wait for each request. Defaults to 5.
 
     Returns:
-        dict[str, bool]: A dictionary mapping each URL to its availability status.
+        A dictionary mapping each URL to its status string.
     """
+
     logger.info(
-        f"Starting URL availability check for {len(urls)} URLs with a timeout of {timeout} seconds."
+        f"Starting check for {len(urls)} URLs with a timeout of {timeout}"
     )
     results: dict[str, str] = {}
+
     for url in urls:
+        status = "UNKNOWN"
+
         try:
             logger.debug(f"Checking URL: {url}")
             response = requests.get(url, timeout=timeout)
+
             if response.ok:
                 status = f"{response.status_code} OK"
             else:
                 status = (
                     f"{response.status_code} {response.reason}"
                 )
-
         except requests.exceptions.Timeout:
             status = "TIMEOUT"
             logger.warning(f"Request to {url} timed out.")
         except requests.exceptions.ConnectionError:
             status = "CONNECTION_ERROR"
-            logger.warning(
-                f"Connection error occurred while trying to reach {url}."
-            )
+            logger.warning(f"Connection error for {url}.")
         except requests.exceptions.RequestException as e:
-            status = f"REQUEST_ERROR {type(e).__name__}"
+            status = f"REQUEST_ERROR: {type(e).__name__}"
             logger.error(
-                f"An error occurred while requesting {url}: {e}",
+                f"An unexpected request error occured for {url}: {e}",
                 exc_info=True,
             )
 
         results[url] = status
-        logger.debug(f"Checked URL: {url:<40} -> {status}")
+        logger.debug(f"Checked: {url:<40} -> {status}")
 
-    logger.info("Completed URL availability check.")
+    logger.info("URL check finished.")
     return results
