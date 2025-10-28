@@ -1,4 +1,4 @@
-import pytest 
+import pytest
 import requests
 from pytest_mock import MockerFixture
 
