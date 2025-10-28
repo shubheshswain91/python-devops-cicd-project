@@ -11,7 +11,7 @@ on:
         type: string
 
 jobs:
-  publish-testpypi:
+  build:
     runs-on: ubuntu-latest
     environment: development
     permissions:
