@@ -8,5 +8,5 @@ This repo contains the code for the CI/CD section of my Python for DevOps.
 [x] Add linting(ruff) and format checks(black) <br>
 [x] Add typing(mypy) and security checks(bandit) <br>
 [x] Add test automation <br>
-[] Build our Python project <br>
-[] Publish the project to both TestPyPi and PyPi when a new tag is pushed <br>
+[x] Build our Python project <br>
+[] Publish the project to both TestPyPI and PyPI when a new release is published <br>
