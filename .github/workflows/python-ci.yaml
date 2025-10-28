@@ -26,5 +26,11 @@ jobs:
       - name: Linting and Formatting Check
         run: |
           ruff check .
-          black --check .   
+          black --check . 
+      - name: Static Type Checking
+        run: |
+          mypy src/      
+      - name: Security Check
+        run: |
+          bandit -c pyproject.toml -r .
    
