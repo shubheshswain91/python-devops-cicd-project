@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.3.0 (2025-10-29)
+
+### Features
+
+- **python-cicd**: Publish to PyPI
+  ([`e910180`](https://github.com/shubheshswain91/python-devops-cicd-project/commit/e910180505a5c8e710822c4a392bedc32f643e5c))
+
+
 ## v1.2.2 (2025-10-29)
 
 ### Bug Fixes
