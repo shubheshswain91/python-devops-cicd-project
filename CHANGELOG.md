@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.2.1 (2025-10-29)
+
+### Bug Fixes
+
+- **python-cicd**: Added environment
+  ([`6e9bad5`](https://github.com/shubheshswain91/python-devops-cicd-project/commit/6e9bad5425056743fa0bad3a3a463e9d1137ad20))
+
+
 ## v1.2.0 (2025-10-28)
 
 ### Features
