@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.3.4 (2025-10-29)
+
+### Bug Fixes
+
+- **python-cicd**: Updated the publish yaml file
+  ([`fe8ca7f`](https://github.com/shubheshswain91/python-devops-cicd-project/commit/fe8ca7f0dfec9f597276fd3ff8fb41bf56eb50e7))
+
+
 ## v1.3.3 (2025-10-29)
 
 ### Bug Fixes
