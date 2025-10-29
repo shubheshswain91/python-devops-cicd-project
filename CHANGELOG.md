@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.3.3 (2025-10-29)
+
+### Bug Fixes
+
+- **python-cicd**: Using TestPyPI token
+  ([`ac83340`](https://github.com/shubheshswain91/python-devops-cicd-project/commit/ac833405325f7364aebd2fa603299387417a7b91))
+
+
 ## v1.3.2 (2025-10-29)
 
 ### Bug Fixes
