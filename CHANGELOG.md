@@ -2,6 +2,17 @@
 
 <!-- version list -->
 
+## v1.2.2 (2025-10-29)
+
+### Bug Fixes
+
+- **python-cicd**: Changed token
+  ([`05e9ff6`](https://github.com/shubheshswain91/python-devops-cicd-project/commit/05e9ff6fadc8dad3e91c3a36d0f37923c055a13e))
+
+- **python-cicd**: Changed token
+  ([`060f325`](https://github.com/shubheshswain91/python-devops-cicd-project/commit/060f3257379bfee90d900991fd04e23796108f08))
+
+
 ## v1.2.1 (2025-10-29)
 
 ### Bug Fixes
