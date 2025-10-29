@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.3.1 (2025-10-29)
+
+### Performance Improvements
+
+- **python-cicd**: Feature improvement
+  ([`43f3522`](https://github.com/shubheshswain91/python-devops-cicd-project/commit/43f3522987af1f1081110de9d3899f103c8cb890))
+
+
 ## v1.3.0 (2025-10-29)
 
 ### Features
